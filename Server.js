@@ -6,9 +6,10 @@ var router=express.Router();
 
 var uploadRoute = require("./Services/UploadService");
 
+app.use(cors())
 
 app.use('/upload',uploadRoute);
 
-app.listen(5000, function () {
-    console.log('Server started on port 5000...');
+app.listen(5001, function () {
+    console.log('Server started on port 5001...');
 });
